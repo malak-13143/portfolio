@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Malak — Full-stack Developer</title>
+<meta name="description" content="Portfolio of Malak — full-stack developer and CS student at Capital University, Cairo.">
+<meta name="author" content="Malak">
+<meta name="theme-color" content="#5A5F9C">
+
+<meta property="og:title" content="Malak — Full-stack Developer">
+<meta property="og:description" content="Full-stack developer & CS student at Capital University, Cairo.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_EG">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Malak — Full-stack Developer">
+<meta name="twitter:description" content="Full-stack developer & CS student at Capital University, Cairo.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%235A5F9C'/%3E%3Ctext x='50' y='72' font-family='monospace' font-size='62' font-weight='700' fill='%23F7F5FB' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<input type="radio" name="lang" id="lang-en" class="lang-radio" checked>
+<input type="radio" name="lang" id="lang-ar" class="lang-radio">
+
+<span id="top"></span>
+
+<div class="lang-switch" role="group" aria-label="Language switch">
+  <label for="lang-en" class="lang-btn lang-btn-en">EN</label>
+  <label for="lang-ar" class="lang-btn lang-btn-ar">ع</label>
+</div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand" aria-label="Malak home"><span class="dot"></span>malak<span class="mono">.dev</span></a>
+    <div class="nav-scroll">
+      <nav class="links">
+        <a href="#about"><span class="lang-en">about</span><span class="lang-ar">عني</span></a>
+        <a href="#education"><span class="lang-en">education</span><span class="lang-ar">التعليم</span></a>
+        <a href="#skills"><span class="lang-en">skills</span><span class="lang-ar">المهارات</span></a>
+        <a href="#projects"><span class="lang-en">projects</span><span class="lang-ar">المشاريع</span></a>
+        <a href="#services"><span class="lang-en">services</span><span class="lang-ar">الخدمات</span></a>
+        <a href="#contact"><span class="lang-en">contact</span><span class="lang-ar">تواصل</span></a>
+        <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="nav-cv"><span class="lang-en">CV ↗</span><span class="lang-ar">السيرة ↗</span></a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap hero-inner">
+    <span class="badge reveal"><span class="ping"></span>
+      <span class="lang-en">open to internships &amp; collabs · Cairo, EG</span>
+      <span class="lang-ar">متاحة للتدريب والتعاون · القاهرة، مصر</span>
+    </span>
+    <h1 class="display reveal">
+      <span class="lang-en">Hi, I'm Malak.</span>
+      <span class="lang-ar">مرحبًا، أنا ملك.</span>
+      <br>
+      <span class="lang-en">Full-stack developer building complete web experiences.</span>
+      <span class="lang-ar">مطوّرة Full-stack ببني تجارب ويب متكاملة.</span>
+    </h1>
+    <p class="hero-lede reveal">
+      <span class="lang-en">Second-year Computer Science student and full-stack developer — I take ideas from a blank canvas to a deployed product, working across front-end, back-end, and everything in between.</span>
+      <span class="lang-ar">طالبة سنة تانية حاسبات ومطوّرة Full-stack — بحوّل الأفكار من صفحة بيضاء لمنتج شغال على الإنترنت، بشتغل على الواجهة الأمامية والخلفية وكل حاجة بينهم.</span>
+    </p>
+    <div class="cta-row reveal">
+      <a href="#projects" class="btn primary">
+        <span class="lang-en">View projects</span>
+        <span class="lang-ar">شوف المشاريع</span>
+      </a>
+      <a href="#contact" class="btn ghost">
+        <span class="lang-en">Get in touch</span>
+        <span class="lang-ar">تواصل معايا</span>
+      </a>
+    </div>
+    <div class="meta-strip reveal">
+      <span>
+        <span class="lang-en"><strong>Based in</strong> Cairo, Egypt</span>
+        <span class="lang-ar"><strong>مكان الإقامة</strong> القاهرة، مصر</span>
+      </span>
+      <span>
+        <span class="lang-en"><strong>Studying at</strong> Capital University</span>
+        <span class="lang-ar"><strong>بتدرس في</strong> جامعة العاصمة</span>
+      </span>
+      <span>
+        <span class="lang-en"><strong>Languages</strong> Arabic (native) · English (C1)</span>
+        <span class="lang-ar"><strong>اللغات</strong> عربي (لغة أم) · إنجليزي (C1)</span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="avatar" aria-hidden="true">
+        <img src="me.jpg" alt="" loading="lazy" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-empty');">
+        <span class="avatar-label mono">
+          <span class="lang-en">photo</span>
+          <span class="lang-ar">صورة</span>
+        </span>
+      </div>
+      <ul class="about-list">
+        <li>
+          <span class="lang-en"><strong>Status</strong> Second-year CS student</span>
+          <span class="lang-ar"><strong>الحالة</strong> طالبة سنة تانية حاسبات</span>
+        </li>
+        <li>
+          <span class="lang-en"><strong>Focus</strong> Full-stack development</span>
+          <span class="lang-ar"><strong>التركيز</strong> تطوير Full-stack</span>
+        </li>
+        <li>
+          <span class="lang-en"><strong>Based</strong> Cairo, Egypt</span>
+          <span class="lang-ar"><strong>المكان</strong> القاهرة، مصر</span>
+        </li>
+        <li>
+          <span class="lang-en"><strong>Speaks</strong> Arabic · English</span>
+          <span class="lang-ar"><strong>بتتكلم</strong> عربي · إنجليزي</span>
+        </li>
+      </ul>
+    </div>
+    <div class="about-copy">
+      <p class="kicker">
+        <span class="lang-en">About</span>
+        <span class="lang-ar">نبذة عني</span>
+      </p>
+      <p>
+        <span class="lang-en">I'm a second-year Computer Science student at Capital University in Cairo, and a full-stack developer who enjoys building things end-to-end — from a database schema to a polished user interface.</span>
+        <span class="lang-ar">أنا طالبة سنة تانية حاسبات في جامعة العاصمة بالقاهرة، ومطوّرة Full-stack بحب أبني الحاجة من الألف للياء — من تصميم قاعدة البيانات لحد واجهة المستخدم النهائية.</span>
+      </p>
+      <p>
+        <span class="lang-en">On the front-end I work with HTML, CSS, JavaScript, TypeScript, and Angular. On the back-end I build with Node.js, Express, and MongoDB. I also work with Python for scripting and mobile apps using Flet. I keep my projects organized with Git and GitHub.</span>
+        <span class="lang-ar">في الواجهة الأمامية بشتغل بـ HTML وCSS وJavaScript وTypeScript وAngular. وفي الواجهة الخلفية ببني بـ Node.js وExpress وMongoDB. وكمان بستخدم Python في السكريبتات وتطبيقات الموبايل بـ Flet. وبنظّم مشاريعي بـ Git وGitHub.</span>
+      </p>
+      <p>
+        <span class="lang-en">Beyond code, I've completed a business entrepreneurship training — so I like thinking about the product as a whole, not just the technical side.</span>
+        <span class="lang-ar">بعيدًا عن الكود، خلّصت تدريب في ريادة الأعمال — عشان كده بحب أفكر في المنتج ككل، مش بس الجانب التقني.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="education">
+  <div class="wrap">
+    <p class="kicker">
+      <span class="lang-en">Education &amp; Training</span>
+      <span class="lang-ar">التعليم والتدريب</span>
+    </p>
+    <h2 class="h">
+      <span class="lang-en">Where I'm learning the fundamentals</span>
+      <span class="lang-ar"> بتعلّم الأساسيات فين</span>
+    </h2>
+    <div class="edu-list">
+
+      <div class="edu-card">
+        <span class="edu-node" aria-hidden="true"></span>
+        <div>
+          <span class="when">
+            <span class="lang-en">Second year · In progress</span>
+            <span class="lang-ar">السنة الثانية · قيد الدراسة</span>
+          </span>
+          <h3>
+            <span class="lang-en">Faculty of Computers and Artificial Intelligence — Capital University</span>
+            <span class="lang-ar">كلية الحاسبات والذكاء الاصطناعي — جامعة العاصمة</span>
+          </h3>
+          <p>
+            <span class="lang-en">Second year of the Computer Science program at Capital University in Cairo. Coursework covers programming fundamentals, data structures, algorithms, databases, and web development — alongside hands-on projects that I build outside of class.</span>
+            <span class="lang-ar">السنة الثانية من برنامج علوم الحاسب في جامعة العاصمة بالقاهرة. المواد بتغطي أساسيات البرمجة وهياكل البيانات والخوارزميات وقواعد البيانات وتطوير الويب — بالإضافة لمشاريع عملية ببنيها خارج الدراسة.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <span class="edu-node" aria-hidden="true"></span>
+        <div>
+          <span class="when">
+            <span class="lang-en">Training</span>
+            <span class="lang-ar">تدريب</span>
+          </span>
+          <h3>
+            <span class="lang-en">Business Entrepreneurship — InnovEgypt</span>
+            <span class="lang-ar">ريادة الأعمال — InnovEgypt</span>
+          </h3>
+          <p>
+            <span class="lang-en">Completed a business entrepreneurship training with InnovEgypt — covering idea validation, business models, and how to think about a product from a user and market perspective.</span>
+            <span class="lang-ar">خلّصت تدريب في ريادة الأعمال مع InnovEgypt — بيغطي التحقق من الفكرة، نماذج العمل، وإزاي تفكر في المنتج من منظور المستخدم والسوق.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <span class="edu-node" aria-hidden="true"></span>
+        <div>
+          <span class="when">
+            <span class="lang-en">Volunteering</span>
+            <span class="lang-ar">تطوع</span>
+          </span>
+          <h3>
+            <span class="lang-en">Maker Program</span>
+            <span class="lang-ar">Maker Program</span>
+          </h3>
+          <p>
+            <span class="lang-en">Volunteered with the Maker Program — contributing to community-driven projects and collaborating with a team to turn ideas into working prototypes.</span>
+            <span class="lang-ar">تطوعت في Maker Program — شاركت في مشاريع مجتمعية وتعاونت مع فريق لتحويل الأفكار لنماذج شغالة.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <span class="edu-node" aria-hidden="true"></span>
+        <div>
+          <span class="when">
+            <span class="lang-en">Training</span>
+            <span class="lang-ar">تدريب</span>
+          </span>
+          <h3>
+            <span class="lang-en">MEAN Stack Development — Training</span>
+            <span class="lang-ar">تطوير MEAN Stack — تدريب</span>
+          </h3>
+          <p>
+            <span class="lang-en">Completed a MEAN stack training — building full-stack web applications with MongoDB, Express, Angular, and Node.js, from the database layer up to a working UI.</span>
+            <span class="lang-ar">خلّصت تدريب MEAN Stack — بناء تطبيقات ويب Full-stack بـ MongoDB وExpress وAngular وNode.js، من طبقة قاعدة البيانات لحد واجهة شغالة.</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="wrap">
+    <p class="kicker">
+      <span class="lang-en">Skills</span>
+      <span class="lang-ar">المهارات</span>
+    </p>
+    <h2 class="h">
+      <span class="lang-en">Tools I reach for</span>
+      <span class="lang-ar">الأدوات اللي بستخدمها</span>
+    </h2>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3>
+          <span class="lang-en">Languages</span>
+          <span class="lang-ar">لغات البرمجة</span>
+        </h3>
+        <div class="skill-row"><span class="name">C</span></div>
+        <div class="skill-row"><span class="name">Python</span></div>
+        <div class="skill-row"><span class="name">JavaScript</span></div>
+        <div class="skill-row"><span class="name">TypeScript</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>
+          <span class="lang-en">Front-end</span>
+          <span class="lang-ar">الواجهة الأمامية</span>
+        </h3>
+        <div class="skill-row"><span class="name">HTML5</span></div>
+        <div class="skill-row"><span class="name">CSS3</span></div>
+        <div class="skill-row"><span class="name">Angular</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>
+          <span class="lang-en">Back-end &amp; Tools</span>
+          <span class="lang-ar">الواجهة الخلفية والأدوات</span>
+        </h3>
+        <div class="skill-row"><span class="name">Node.js</span></div>
+        <div class="skill-row"><span class="name">Express</span></div>
+        <div class="skill-row"><span class="name">MongoDB</span></div>
+        <div class="skill-row"><span class="name">Git &amp; GitHub</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>
+          <span class="lang-en">Beyond code</span>
+          <span class="lang-ar">ما وراء الكود</span>
+        </h3>
+        <div class="skill-row">
+          <span class="name">
+            <span class="lang-en">Business entrepreneurship training</span>
+            <span class="lang-ar">تدريب ريادة الأعمال</span>
+          </span>
+        </div>
+        <div class="skill-row">
+          <span class="name">
+            <span class="lang-en">Product-minded thinking</span>
+            <span class="lang-ar">تفكير Product-minded</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="projects">
+  <div class="wrap">
+    <p class="kicker">
+      <span class="lang-en">Projects</span>
+      <span class="lang-ar">المشاريع</span>
+    </p>
+    <h2 class="h">
+      <span class="lang-en">A few things I've built so far</span>
+      <span class="lang-ar">شوية حاجات عملتها لحد دلوقتي</span>
+    </h2>
+    <div class="proj-grid">
+
+      <article class="proj-card">
+        <div class="tag-row">
+          <span class="tag"><span class="lang-en">Solo</span><span class="lang-ar">فردي</span></span>
+          <span class="tag"><span class="lang-en">Web app</span><span class="lang-ar">تطبيق ويب</span></span>
+        </div>
+        <h3>
+          <span class="lang-en">Course Organizer</span>
+          <span class="lang-ar">منظّم المواد الدراسية</span>
+        </h3>
+        <p>
+          <span class="lang-en">A browser-based tool for keeping track of courses, schedules and assignments, using localStorage so everything persists without a backend.</span>
+          <span class="lang-ar">أداة شغالة على المتصفح لمتابعة المواد والجداول والواجبات، باستخدام localStorage عشان كل حاجة تفضل محفوظة من غير سيرفر.</span>
+        </p>
+        <span class="stack">HTML · CSS · JavaScript</span>
+      </article>
+
+      <article class="proj-card">
+        <div class="tag-row">
+          <span class="tag"><span class="lang-en">Team</span><span class="lang-ar">فريق</span></span>
+          <span class="tag"><span class="lang-en">Web app</span><span class="lang-ar">تطبيق ويب</span></span>
+        </div>
+        <h3>
+          <span class="lang-en">Animal Encyclopedia</span>
+          <span class="lang-ar">موسوعة الحيوانات</span>
+        </h3>
+        <p>
+          <span class="lang-en">A team-built reference site. I led the UI design and built the authentication pages — login and sign-up flows — for the site.</span>
+          <span class="lang-ar">موقع مرجعي اتبنى مع فريق. أنا قدت تصميم الواجهة وبنيت صفحات الدخول والتسجيل.</span>
+        </p>
+        <span class="stack">HTML · CSS · JavaScript</span>
+      </article>
+
+      <article class="proj-card">
+        <div class="tag-row">
+          <span class="tag"><span class="lang-en">Team</span><span class="lang-ar">فريق</span></span>
+          <span class="tag"><span class="lang-en">Mobile app</span><span class="lang-ar">تطبيق موبايل</span></span>
+        </div>
+        <h3>
+          <span class="lang-en">IoT Mobile App</span>
+          <span class="lang-ar">تطبيق موبايل للـ IoT</span>
+        </h3>
+        <p>
+          <span class="lang-en">A mobile application built with Python Flet as part of an IoT course project — designed to interact with connected devices and display live data in a clean mobile interface.</span>
+          <span class="lang-ar">تطبيق موبايل اتبنى بـ Python Flet كجزء من مشروع مادة Internet of Things — مصمم للتفاعل مع الأجهزة المتصلة وعرض البيانات بشكل مباشر في واجهة موبايل نضيفة.</span>
+        </p>
+        <span class="stack">Python · Flet</span>
+      </article>
+
+      <article class="proj-card">
+        <div class="tag-row">
+          <span class="tag"><span class="lang-en">Solo</span><span class="lang-ar">فردي</span></span>
+          <span class="tag"><span class="lang-en">Web app</span><span class="lang-ar">تطبيق ويب</span></span>
+        </div>
+        <h3>
+          <span class="lang-en">Library Website</span>
+          <span class="lang-ar">موقع مكتبة</span>
+        </h3>
+        <p>
+          <span class="lang-en">A website for a library that showcases its book collection — with browsing, categorization, and a clean interface for visitors to explore available titles.</span>
+          <span class="lang-ar">موقع لمكتبة بيعرض مجموعة الكتب اللي عندها — مع تصفح وتصنيف وواجهة نضيفة للزوار عشان يستكشفوا الكتب المتاحة.</span>
+        </p>
+        <span class="stack">HTML · CSS · JavaScript</span>
+      </article>
+
+      <article class="proj-card">
+        <div class="tag-row">
+          <span class="tag"><span class="lang-en">Solo</span><span class="lang-ar">فردي</span></span>
+          <span class="tag"><span class="lang-en">Full-stack</span><span class="lang-ar">Full-stack</span></span>
+        </div>
+        <h3>
+          <span class="lang-en">E-commerce Clothing Store</span>
+          <span class="lang-ar">متجر ملابس إلكتروني</span>
+        </h3>
+        <p>
+          <span class="lang-en">A full e-commerce website for a clothing store — product listings, cart, and checkout flow, built with a modern full-stack setup.</span>
+          <span class="lang-ar">موقع تجارة إلكترونية كامل لمحل ملابس — عرض المنتجات، عربة التسوق، وإتمام الشراء، مبني بـ stack حديث للـ Full-stack.</span>
+        </p>
+        <span class="stack">Angular · Node.js · Express · MongoDB</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <p class="kicker">
+      <span class="lang-en">Services</span>
+      <span class="lang-ar">الخدمات</span>
+    </p>
+    <h2 class="h">
+      <span class="lang-en">How I can help</span>
+      <span class="lang-ar">إزاي أقدر أساعد</span>
+    </h2>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <span class="svc-num">→</span>
+        <h3>
+          <span class="lang-en">Front-end development</span>
+          <span class="lang-ar">تطوير الواجهة الأمامية</span>
+        </h3>
+        <p>
+          <span class="lang-en">Building responsive web interfaces with Angular, HTML, CSS, and TypeScript.</span>
+          <span class="lang-ar">بناء واجهات ويب متجاوبة بـ Angular وHTML وCSS وTypeScript.</span>
+        </p>
+      </div>
+      <div class="svc-card">
+        <span class="svc-num">→</span>
+        <h3>
+          <span class="lang-en">Full-stack web apps</span>
+          <span class="lang-ar">تطبيقات ويب Full-stack</span>
+        </h3>
+        <p>
+          <span class="lang-en">End-to-end web applications — from UI to database — using Node.js, Express, and MongoDB.</span>
+          <span class="lang-ar">تطبيقات ويب كاملة من الواجهة لقاعدة البيانات باستخدام Node.js وExpress وMongoDB.</span>
+        </p>
+      </div>
+      <div class="svc-card">
+        <span class="svc-num">→</span>
+        <h3>
+          <span class="lang-en">Mobile apps with Python</span>
+          <span class="lang-ar">تطبيقات موبايل بـ Python</span>
+        </h3>
+        <p>
+          <span class="lang-en">Cross-platform mobile apps built with Python Flet, ideal for small tools and IoT projects.</span>
+          <span class="lang-ar">تطبيقات موبايل متعددة المنصات بـ Python Flet، مثالية للأدوات الصغيرة ومشاريع الـ IoT.</span>
+        </p>
+      </div>
+      <div class="svc-card">
+        <span class="svc-num">→</span>
+        <h3>
+          <span class="lang-en">Business-minded thinking</span>
+          <span class="lang-ar">تفكير بيزنس</span>
+        </h3>
+        <p>
+          <span class="lang-en">A product-first approach — thinking about users, value, and business goals alongside the technical build.</span>
+          <span class="lang-ar">تفكير Product-first — مراعاة المستخدمين والقيمة والأهداف التجارية جنب البناء التقني.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="kicker">
+        <span class="lang-en">Contact</span>
+        <span class="lang-ar">تواصل</span>
+      </p>
+      <h2 class="h">
+        <span class="lang-en">Let's talk</span>
+        <span class="lang-ar">يلا نتكلم</span>
+      </h2>
+      <p class="contact-intro">
+        <span class="lang-en">Open to internships, freelance work, or collaborations on web and mobile projects. The quickest way to reach me is by email.</span>
+        <span class="lang-ar">متاحة للتدريب، العمل الحر، أو التعاون في مشاريع ويب وموبايل. أسرع طريقة توصليني بيها هي الإيميل.</span>
+      </p>
+      <ul class="contact-links">
+        <li><a href="mailto:malakmostafa.13143@gmail.com">
+          <span><span class="lang-en">Email</span><span class="lang-ar">إيميل</span></span>
+          <span class="k">malakmostafa.13143@gmail.com</span>
+        </a></li>
+        <li><a href="https://github.com/malak-13143" target="_blank" rel="noopener noreferrer">
+          <span>GitHub</span>
+          <span class="k">/malak-13143</span>
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/malak-mostafa-abab4138b" target="_blank" rel="noopener noreferrer">
+          <span>LinkedIn</span>
+          <span class="k">/in/malak-mostafa</span>
+        </a></li>
+        <li><a href="https://wa.me/201099285292" target="_blank" rel="noopener noreferrer">
+          <span>WhatsApp</span>
+          <span class="k">+20 109 928 5292</span>
+        </a></li>
+        <li><a href="cv.pdf" target="_blank" rel="noopener noreferrer">
+          <span><span class="lang-en">CV</span><span class="lang-ar">السيرة الذاتية</span></span>
+          <span class="k">PDF ↗</span>
+        </a></li>
+      </ul>
+    </div>
+    <form id="contactForm" action="mailto:malakmostafa.13143@gmail.com" method="post" enctype="text/plain">
+      <div>
+        <label for="cf-name">
+          <span class="lang-en">Name</span>
+          <span class="lang-ar">الاسم</span>
+        </label>
+        <input id="cf-name" name="name" type="text" required autocomplete="name">
+      </div>
+      <div>
+        <label for="cf-email">
+          <span class="lang-en">Email</span>
+          <span class="lang-ar">الإيميل</span>
+        </label>
+        <input id="cf-email" name="email" type="email" required autocomplete="email">
+      </div>
+      <div>
+        <label for="cf-msg">
+          <span class="lang-en">Message</span>
+          <span class="lang-ar">الرسالة</span>
+        </label>
+        <textarea id="cf-msg" name="message" required autocomplete="off"></textarea>
+      </div>
+      <button type="submit" class="submit">
+        <span class="lang-en">Send message</span>
+        <span class="lang-ar">ابعت الرسالة</span>
+      </button>
+      <!-- <p class="form-note">
+        <span class="lang-en">Opens your email app with this message pre-filled — nothing is sent from the page itself.</span>
+        <span class="lang-ar">بيفتح تطبيق الإيميل عندك برسالة جاهزة — مفيش حاجة بتتبعت من الصفحة نفسها.</span>
+      </p> -->
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="dot"></span>
+      <span class="mono">malak<span class="mono-soft">.dev</span></span>
+    </div>
+    <div class="footer-social" aria-label="Social links">
+      <a href="https://www.linkedin.com/in/malak-mostafa-abab4138b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+      </a>
+      <a href="https://wa.me/201099285292" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.09 3.2 5.08 4.48.71.31 1.26.49 1.69.62.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12.05 21.8h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.85 9.85 0 0 1-1.51-5.27c0-5.45 4.44-9.88 9.9-9.88 2.64 0 5.13 1.03 7 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.45-4.44 9.89-9.9 9.89zm8.42-18.31A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.94L.07 24l6.3-1.65a11.86 11.86 0 0 0 5.67 1.44h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.47-8.4z"/></svg>
+      </a>
+      <a href="https://github.com/malak-13143" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.24 1.83 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.53.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.92 1.23 3.23 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.83.58A12 12 0 0 0 12 .3z"/></svg>
+      </a>
+      <a href="mailto:malakmostafa.13143@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 9 6.5 9-6.5"/></svg>
+      </a>
+    </div>
+    <div class="footer-meta">
+      <span class="lang-en">© 2026 Malak — Cairo, Egypt</span>
+      <span class="lang-ar">© 2026 ملك — القاهرة، مصر</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
